@@ -45,6 +45,10 @@ body {
   padding-bottom: 2rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -88,6 +92,10 @@ body {
   background-color: var(--color-secondary-light);
 }
 
+.bg-white {
+  background-color: white;
+}
+
 .py-1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -100,6 +108,10 @@ body {
 
 .pt-0 {
   padding-top: 0;
+}
+
+.pt-5 {
+  padding-top: 5rem;
 }
 
 .p-05 {
@@ -149,11 +161,20 @@ h5 {
 }
 
 /* HEADER */
-
+header {
+  position: fixed;
+  width: 100%;
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .menu a {
@@ -211,6 +232,35 @@ nav {
 
 .color-secondary {
   color: var(--color-secondary);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-white {
+  color: white;
+}
+
+.color-yellow {
+  color: rgb(253, 193, 95);
+}
+
+.down-btn {
+  background-color: var(--color-primary);
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.round-img {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  height: 20%;
+  width: 20%;
 }
 
 @media screen and (max-width: 992px) {
