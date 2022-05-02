@@ -98,6 +98,10 @@ img {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 .px-0 {
   padding-left: 0;
@@ -111,7 +115,9 @@ img {
 .pt-0 {
   padding-top: 0;
 }
-
+.pt-20 {
+  padding-top: 20px;
+}
 .pt-5 {
   padding-top: 5rem;
 }
@@ -179,6 +185,7 @@ h5 {
 header {
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 nav {
   display: flex;
@@ -292,9 +299,25 @@ nav {
   height: 15%;
   width: 15%;
 }
+.round-img-big {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
 
 .align-center {
   align-items: center;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.quote {
+  font-size: 3rem;
+  color: var(--color-primary);
+  position: absolute;
+  right: 10px;
 }
 
 @media screen and (min-width: 992px) {
@@ -400,5 +423,12 @@ nav {
   }
   .pl-sm-0 {
     padding-left: 0px;
+  }
+  .quote {
+    font-size: 6rem;
+    color: var(--color-primary);
+    position: absolute;
+    right: 50px;
+    top: 10px;
   }
 }
